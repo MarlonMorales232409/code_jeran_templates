@@ -4,17 +4,56 @@ export const baseTheme = createTheme({
 	palette: {
 		mode: "light",
 		primary: {
-			main: "#C4762B",
+			main: "#CC9544",
 		},
 		secondary: {
-			main: "#8894A2",
+			main: "#F0A500",
 		},
 		info: {
-			main: "#D7B791",
+			main: "#5A2B11",
+		},
+		success: {
+			main: "#EF962D",
 		},
 	},
 
 	components: {
+		MuiLink: {
+			defaultProps: {
+				underline: "none",
+			},
+		},
+		MuiAppBar: {
+			defaultProps: {
+				elevation: 0,
+				position: "fixed",
+			},
+			styleOverrides: {
+				root: {
+					backgroundColor: "white",
+					height: 85,
+					// boxShadow: "none",
+				},
+			},
+		},
+
+		MuiToolbar: {
+			styleOverrides: {
+				root: {
+					padding: 0,
+					margin: 0,
+				},
+			},
+		},
+
+		MuiButton: {
+			styleOverrides: {
+				root: {
+					borderRadius: 50,
+				},
+			},
+		},
+
 		MuiTypography: {
 			styleOverrides: {
 				h1: {

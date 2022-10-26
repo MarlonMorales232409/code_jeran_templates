@@ -1,11 +1,16 @@
 import { Typography } from '@mui/material'
 import type { NextPage } from 'next'
+import { MainLayout } from '../components/layout'
+import { HeroView, HomeView } from '../components/ui'
 
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
-    <Typography variant='h1' color="primary">Landing Page Base Template</Typography>
+    <MainLayout>
+      <HomeView />
+      <HeroView />
+    </MainLayout>
   )
 }
 
-export default Home
+export default HomePage
